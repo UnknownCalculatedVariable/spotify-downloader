@@ -30,6 +30,10 @@ Refer to our [Installation Guide](installation.md) for more details.
 
   > On some systems you might have to change `pip` to `pip3`.
 
+### JioSaavn Support
+
+spotDL also includes built-in support for downloading from JioSaavn with a rich UI. See [JioSaavn Integration](jiosaavn.md) for more details.
+
 ### Other options
 
 - Prebuilt executable

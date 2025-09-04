@@ -134,6 +134,10 @@ For a list of all **options** use ```spotdl -h```
 
 - `meta`: Updates metadata for the provided song files.
 
+- `jiosaavn`: Download songs from JioSaavn with a rich UI.
+    - Usage:
+        `spotdl jiosaavn [JioSaavn URLs]`
+
 </details>
 
 ## Music Sourcing and Audio Quality

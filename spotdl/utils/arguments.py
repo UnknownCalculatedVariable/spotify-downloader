@@ -16,7 +16,7 @@ from spotdl.utils.logging import NAME_TO_LEVEL
 
 __all__ = ["OPERATIONS", "SmartFormatter", "parse_arguments"]
 
-OPERATIONS = ["download", "save", "web", "sync", "meta", "url"]
+OPERATIONS = ["download", "save", "web", "sync", "meta", "url", "jiosaavn"]
 
 
 class SmartFormatter(argparse.HelpFormatter):
@@ -60,7 +60,8 @@ def parse_main_options(parser: _ArgumentGroup):
             "web: Starts a web interface to simplify the download process.\n"
             "sync: Removes songs that are no longer present, downloads new ones\n"
             "meta: Update your audio files with metadata\n"
-            "url: Get the download URL for songs\n\n"
+            "url: Get the download URL for songs\n"
+            "jiosaavn: Download songs from JioSaavn with rich UI\n\n"
         ),
     )
 
@@ -84,6 +85,7 @@ def parse_main_options(parser: _ArgumentGroup):
             "downloading/matching youtube urls.\n"
             "When using youtube url without spotify url, "
             "you won't be able to use `--fetch-albums` option.\n\n"
+            "For JioSaavn downloads, use JioSaavn song/album/playlist URLs.\n\n"
         ),
     )
 
