@@ -35,6 +35,10 @@ Refer to our [Installation Guide](docs/installation.md) for more details.
 
   > On some systems you might have to change `pip` to `pip3`.
 
+### JioSaavn Support
+
+spotDL also includes built-in support for downloading from JioSaavn with a rich UI. No additional installation is required beyond the standard spotDL installation.
+
 <details>
     <summary style="font-size:1.25em"><strong>Other options</strong></summary>
 
@@ -137,6 +141,26 @@ For a list of all **options** use ```spotdl -h```
 - `jiosaavn`: Download songs from JioSaavn with a rich UI.
     - Usage:
         `spotdl jiosaavn [JioSaavn URLs]`
+    - Features:
+        - Download individual songs, albums, and playlists from JioSaavn
+        - Beautiful terminal UI with progress bars and information panels
+        - Automatic embedding of cover art and metadata
+        - Supports both MP3 (320 kbps) and FLAC formats
+        - Organizes files by album/artist automatically
+    - Examples:
+        ```bash
+        # Download a single song
+        spotdl jiosaavn "https://www.jiosaavn.com/song/some-song/XXXXXXXXX"
+        
+        # Download an album
+        spotdl jiosaavn "https://www.jiosaavn.com/album/some-album/XXXXXXXXX"
+        
+        # Download in FLAC format
+        spotdl --format flac jiosaavn "https://www.jiosaavn.com/song/some-song/XXXXXXXXX"
+        
+        # Download to a specific directory
+        spotdl --output "/path/to/music" jiosaavn "https://www.jiosaavn.com/song/some-song/XXXXXXXXX"
+        ```
 
 </details>
 
